@@ -1,0 +1,9 @@
+# direnv cache (per-developer; regenerated on `direnv allow`).
+.direnv/
+
+# Bundler-installed gems.
+vendor/bundle/
+
+# Generated test artifacts.
+.rspec_status
+coverage/
