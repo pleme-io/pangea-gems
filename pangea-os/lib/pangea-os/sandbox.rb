@@ -48,7 +48,7 @@ module PangeaOS
         roles
       end
 
-      # role_arn: 'arn:aws:iam::221028091617:role/pangea-os',
+      # role_arn: 'arn:aws:iam::<ACCOUNT_ID>:role/pangea-os',
       def import_image(key, bucket = 'pangea-os', region = ENV['AWS_REGION'] || 'us-east-1')
         ec2 = Aws::EC2::Client.new(region: region)
         tid = ec2.import_image(
