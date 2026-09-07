@@ -2,7 +2,8 @@
 
 require_relative "pangea-discord/version"
 
+Dir[File.join(__dir__, "pangea-discord", "resources", "*.rb")].each { |file| require file }
+
 module PangeaDiscord
   class Error < StandardError; end
-  # Your code goes here...
 end
