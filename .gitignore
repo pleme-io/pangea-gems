@@ -7,3 +7,8 @@ vendor/bundle/
 # Generated test artifacts.
 .rspec_status
 coverage/
+
+# opentofu/terraform working dirs — providers are a function of the lock file
+.terraform/
+*.tfstate
+*.tfstate.backup
